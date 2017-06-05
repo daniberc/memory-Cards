@@ -1,0 +1,27 @@
+enunciado
+
+Hacer una aplicación web (SPA)
+
+	PAGINA PRINCIPAL
+		--> Header --> nos manda al Main
+		--> Footer --> nos lleva al about
+		--> Boton para crear Player
+				--> Introducir nombre
+				--> Seleccionar avatar
+				--> iniciar juego
+						--> Juego
+							Memory Cards
+								Al acertar las parejas --> sumar 1 en el contador de aciertos
+								Al fallar --> sumar 1 en el contador de fallos
+		
+		
+	Requisitos mínimos
+1. Hacer una aplicación en angular 1.6 que tenga -al menos- las siguientes pantallas:
+ - Main
+ - About
+ - Player
+ - Game(el nombre da igual)
+
+2. Subirla a un repo propio de github
+
+A partir de ahí, que cada cual haga lo que le dé tiempo a hacer y lo que más le guste: unas maquetas superchulas, sin nada de código, o lo contrario, las pantallas funcionales sin nada de estilo, o las dos cosas...

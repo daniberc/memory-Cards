@@ -1,0 +1,11 @@
+<article>
+    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
+    <!--{{ compoPadre.foo }} -->
+    <h3 align="center">Bienvenido {{playGame.player.name}} 
+        <img src="app/styles/imgs/avatars/{{playGame.player.avatar}}.png" class="avatar-img">
+    </h3>
+
+    <div class="game-container">
+    <game-board></game-board>
+    </div>
+</article>

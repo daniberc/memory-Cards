@@ -1,0 +1,18 @@
+<article>
+    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
+    <!--{{ compoPadre.foo }} -->
+        <h4 align="center">
+    <span class="game-points">Puntos de aciertos: {{gameBoard.pointsOK}}</span>
+    <span class="game-points">Puntos de fallos: {{gameBoard.pointsKO}}</span>
+    <button ng-click="gameBoard.$onInit()">Empezar de nuevo</button>
+    </h4>
+    <div class="board-container">
+        <card-detail  
+
+            ng-repeat="item in gameBoard.boardCards" 
+            item-card="item" 
+            ng-click="gameBoard.goToDetail(item)" 
+            >
+        </card-detail>
+    </div>
+</article>

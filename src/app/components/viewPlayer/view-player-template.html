@@ -1,0 +1,64 @@
+<article>
+    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
+    <!--{{ compoPadre.foo }} -->
+    <div class="player-container">
+        <h1 align="center">Creación del jugador</h1>
+        <div class="msg-error" ng-show="!viewPlayer.valuesOK">
+            <h1>ERROR </h1>            <p>Debe de informar el nombre de jugador y seleccionar un avatar</p>
+        </div>
+        <br>
+        <p>Introduzca el nombre del jugador
+        <input type="text" ng-model="viewPlayer.name">
+        </p>
+        <br><br>
+        <div class="avatars-list">
+            <h1>Seleccione un avatar</h1>
+            <div class="avatar-imgs">
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="hulk" value="hulk" />
+                <label for="hulk">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/hulk.png" alt="Hulk" />
+                </label>
+
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="batman" value="batman"  />
+                <label for="batman">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/batman.png" alt="Batman" />
+                </label>
+
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="captain-america" value="captain-america"  />
+                <label for="captain-america">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/captain-america.png" alt="Captain America" />
+                </label>
+
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="flash" value="flash" />
+                <label for="flash">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/flash.png" alt="Flash" />
+                </label>
+
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="thor" value="thor"  />
+                <label for="thor">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/thor.png" alt="Thor" />
+                </label>
+                
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="superman" value="superman"  />
+                <label for="superman">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/superman.png" alt="Superman" />
+                </label>
+
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="iron-man" value="iron-man"  />
+                <label for="iron-man">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/iron-man.png" alt="Ironman" />
+                </label>      
+                
+                <input type="radio" class="radio-hidden" ng-model="viewPlayer.avatarClick" name="avatarSelected" id="spider-man" value="spider-man"  />
+                <label for="spider-man">
+                    <img class="avatar-select" src="app/styles/imgs/avatars/spider-man.png" alt="Spiderman" />
+                </label>
+<p><br>Avatar seleccionado:{{viewPlayer.avatarClick}} </p>
+            </div>
+        </div>
+        <div class="bar-button">
+            <button ng-click="viewPlayer.goToPlay(viewPlayer.name)">Jugar</button>
+            <button ng-click="viewPlayer.goToMain()">Cancelar</button>
+            
+    </div>
+</article>

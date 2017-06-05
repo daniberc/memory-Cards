@@ -1,0 +1,11 @@
+<div class="card-detail" ng-switch on="(cardDetail.itemCard.reveal)">
+
+        <!-- Con la directiva ng-src podemos definir la ruta de las imágenes
+    de forma dinámica -->
+    <div ng-switch-default>
+        <img ng-src="app/styles/imgs/cards/{{cardDetail.itemCard.imgReverse}}" class="card-item-back"  >
+    </div>
+    <div ng-switch-when="true">
+        <img ng-src="app/styles/imgs/cards/{{cardDetail.itemCard.img}}" class="card-item-front"  >
+    </div>
+</div>

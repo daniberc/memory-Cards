@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>angular 1.6 workshop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="app/styles/main.css">
+</head>
+
+<body ng-app="app" ng-strict-di>
+
+    <section class="main-page">
+        <!-- aquí se irán renderizando los componentes indicados en el router -->
+        <view-header></view-header>
+            <ui-view></ui-view>        
+        <view-footer></view-footer>
+    </section>    
+
+    <!-- angular -->
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+    <script src="vendor/angular-animate.min.js"></script>
+
+    <!-- our app -->
+    <script src="app/app.js"></script>
+
+    <!-- factories -->
+    <script src="app/factories/cardsFactory.js"></script>
+
+    <!-- components -->
+    <script src="app/components/viewMain/view-main.js"></script>
+    <script src="app/components/commons/Header/header.js"></script>
+    <script src="app/components/commons/Footer/footer.js"></script>
+    <script src="app/components/viewAbout/view-about.js"></script>
+    <script src="app/components/viewPlayer/view-player.js"></script>
+    <script src="app/components/playGame/play-game.js"></script>
+    <script src="app/components/playGame/gameBoard/game-board.js"></script>
+    <script src="app/components/playGame/cardDetail/card-detail.js"></script>
+
+</body>
+
+
+</html>
